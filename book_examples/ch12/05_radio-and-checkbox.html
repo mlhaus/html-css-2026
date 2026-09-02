@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Radio Buttons and Check Boxes</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		h3 {
+			margin-top: 0.5em;
+			margin-bottom: 0.25em;
+		}
+		input { margin-right: .5em; }
+	</style>
+</head>
+
+<body>
+	<form name="myform" action="submit.html" method="post">
+		<h3>Crust:</h3>
+		<div>
+			<input type="radio" name="crust" id="crust1" value="thin" checked>
+			<label for="crust1">Thin Crust</label>
+		</div>
+		<div>
+			<input type="radio" name="crust" id="crust2" value="deep">
+			<label for="crust2">Deep Dish</label>
+		</div>
+		<div>
+			<input type="radio" name="crust" id="crust3" value="hand">
+			<label for="crust3">Hand Tossed</label>
+		</div>
+		<h3>Toppings:</h3>
+		<div>
+			<input type="checkbox" name="topping1" id="topping1" value="pepperoni"
+				   checked>
+			<label for="topping1">Pepperoni</label>
+		</div>
+		<div>
+			<input type="checkbox" name="topping2" id="topping2" value="mushrooms">
+			<label for="topping2">Mushrooms</label>
+		</div>
+		<div>
+			<input type="checkbox" name="topping3" id="topping3" value="olives">
+			<label for="topping3">Black Olives</label>
+		</div>
+	</form>
+</body>
+</html>

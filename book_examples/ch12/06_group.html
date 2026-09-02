@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Group Controls</title>
+	<link rel="stylesheet" href="styles/main.css">
+    <style>
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        fieldset {
+            padding: .5em 1em;
+            margin-bottom: 0.5em;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: .5em;
+        }
+    </style>
+</head>
+
+<body>
+<form action="submit.html" method="get">
+<fieldset>
+    <legend>Crust</legend>
+    <div>
+        <input type="radio" name="crust" id="crust1" value="thin" checked>
+        <label for="crust1">Thin Crust</label>
+    </div>
+    <div>
+        <input type="radio" name="crust" id="crust2" value="deep">
+        <label for="crust2">Deep Dish</label>
+    </div>
+    <div>
+        <input type="radio" name="crust" id="crust3" value="hand">
+        <label for="crust3">Hand Tossed</label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Toppings</legend>
+    <div>
+        <input type="checkbox" name="topping1" id="topping1" value="pepperoni">
+        <label for="topping1">Pepperoni</label>
+    </div>
+    <div>
+        <input type="checkbox" name="topping2" id="topping2" value="mushrooms">
+        <label for="topping2">Mushrooms</label>
+    </div>
+    <div>
+        <input type="checkbox" name="topping3" id="topping3" value="olives">
+        <label for="topping3">Black Olives</label>
+    </div>
+</fieldset>
+</form>
+</body>
+</html>

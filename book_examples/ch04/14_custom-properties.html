@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Properties</title>
+        <meta charset="utf-8">
+        <style>
+			html { 
+				font-family: Arial, sans-serif; 
+			}
+			:root {
+				--primary-color: #0000ff;
+			}
+			h1 {
+				color: var(--primary-color);
+			}
+			a:link { 
+				color: var(--primary-color);
+			}
+			a:hover, a:focus { 
+				color: orange; 
+			}
+			section {
+				--section-color: #f2972e;
+			}
+			section h1 {
+				color: var(--section-color);
+			}
+			section a:link {
+				color: var(--section-color);
+			}
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>San Joaquin Valley Town Hall</h1> 
+            <p>We have some fascinating speakers for you this season!</p>
+            <ul>
+                <li><a href="speakers/brancaccio.html">David Brancaccio</a></li>
+                <li><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></li>
+                <li><a href="speakers/chua.html">Amy Chua</a></li>
+            </ul>
+			<section>
+				<h1>A section heading</h1>
+				<p><a href="test.html">A section link</a></p>
+			</section>
+        </main>
+    </body>
+</html>

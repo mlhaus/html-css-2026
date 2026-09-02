@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Animation Slide Show</title>
+	<style>
+		/* animation CSS */
+		ul {
+			animation: slideshow 15s infinite alternate; 
+		}
+
+		@keyframes slideshow {
+			0%		{left:    0%;}
+			10%		{left:    0%;}
+			20%		{left: -100%;}
+			30%		{left: -100%;}
+			40%		{left: -200%;}
+			50%		{left: -200%;}
+			60%		{left: -300%;}
+			70%		{left: -300%;}
+			80%		{left: -400%;}
+			90%		{left: -400%;}
+			100%	{left: -400%;}
+		}
+
+		/* other formatting */
+		* {
+			margin: 0;
+			padding: 0 0 .5em 0;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 100%;
+			width: 475px;
+			margin: 1em auto;
+		}
+		div {
+			overflow:hidden;	
+		}
+		ul {
+			display: flex;
+			list-style: none;
+			width: 500%;
+			position:relative;
+			& li {
+				width: 20%;
+			}
+		}
+		h2 {
+			color: blue;
+			font-size: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Vecta Corp HQ</h1>
+	<div>
+		<ul>
+			<li>
+				<h2>Front of Building</h2>
+				<img src="images/front.jpg" alt="">
+			</li>
+			<li>
+				<h2>Rear of Building</h2>
+				<img src="images/rear.jpg" alt="">
+			</li>
+			<li>
+				<h2>View from Quad</h2>
+				<img src="images/quad.jpg" alt="">
+			</li>
+			<li>
+				<h2>Meeting Rooms</h2>
+				<img src="images/mtg.jpg" alt="">
+			</li>
+			<li>
+				<h2>Conference Room</h2>
+				<img src="images/conf.jpg" alt="">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

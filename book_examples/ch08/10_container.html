@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Container</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2, h3 { 
+            padding: 0.75em; 
+        }
+
+        /* the styles for the header, main content, sidebar, and footer */
+        body {
+            font-family: Arial, sans-serif;
+            width: 90%;
+            background-color: white;
+            margin: 15px auto;
+            border: 1px solid black; 
+        }
+
+        main {
+            display: flex;
+        }
+        section {
+            flex-basis: 65%;
+            background-color: azure;
+        }
+        aside {
+            flex-basis: 35%;
+            background-color: aquamarine;
+        }
+        header, footer { 
+            background-color: lightskyblue; 
+        }
+        article {
+            padding: 0 1em 1em;
+        }
+        #articles {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* create container */
+        section {
+            container-type: inline-size;
+        }
+        /* container query */
+        @container (min-width: 500px) {
+            h2 {
+                text-align: center;
+            }
+            #articles {
+                flex-direction: row;
+            }
+        }
+
+    </style>
+</head>
+	
+<body>
+    <header><h2>Header</h2></header>
+    <main>
+        <section>
+            <h2>Latest Articles</h2>
+            <div id="articles">
+                <article>
+                    <h3>First article</h3>
+                    <p>This is the first article in this section.</p>
+                </article>
+                <article>
+                    <h3>Second article</h3>
+                    <p>This is the second article in this section.</p>
+                </article>
+            </div>
+        </section>
+        <aside><h2>Aside</h2></aside>    
+    </main>
+    <footer><h2>Footer</h2></footer>
+</body>
+
+</html>

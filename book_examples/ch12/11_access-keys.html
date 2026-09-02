@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Access keys</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		label {
+			display: block;
+			margin-bottom: 0.25em;
+		}
+		input {
+			width: 100%;
+			padding: .2em;
+			margin-bottom: 0.5em;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="submit.html" method="post">
+		<label for="firstname" accesskey="F"><u>F</u>irst name:</label>
+		<input type="text" name="firstname" id="firstname" tabindex="3">
+		<label for="lastname" accesskey="L"><u>L</u>ast name:</label>
+		<input type="text" name="lastname" id="lastname" tabindex="2">
+		<label for="email" accesskey="E"><u>E</u>mail:</label>
+		<input type="text" name="email" id="email" tabindex="1">
+	</form>
+</body>
+</html>

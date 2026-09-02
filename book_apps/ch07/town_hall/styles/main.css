@@ -1,0 +1,116 @@
+/* variables for theme and menu colors */
+:root {
+    --dark: #931420;
+    --medium: #f2972e;
+    --light: #ffebc6;
+
+    --dark_menu: black;
+    --light_menu: white;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(90% + 0.3vw);
+    line-height: 1.5;
+    width: min(90%, 1024px);
+    margin: 1em auto;
+}
+h1, h2, h3 { line-height: 1.2; }
+h1, h2, h3, p, ul { padding: .25em 0; }
+h1 { font-size: 150%; }
+h2 { font-size: 135%; }
+h3 { font-size: 120%; }
+li, p { font-size: 95%; }
+a, em { font-weight: bold; }
+a:link, a:visited { color: var(--dark); }
+a:hover, a:focus { color: var(--medium); }
+ul { margin-left: 2em; }
+
+/* the styles for the header */
+header {
+    & img {
+        float: left;
+        margin: .5em 2em .5em 0;
+        width: clamp(40px, 10%, 80px);    /* native width: 80px */
+    }
+    & h2 {
+        font-size: 225%; 
+        color: var(--medium);
+        padding: 0;
+    }
+    & h3 { 
+        font-style: italic; 
+        padding-bottom: 1em;
+    }
+}
+
+/* the styles for the main content */
+main { 
+    display: flex; 
+    padding-bottom: .5em;
+}
+
+section {
+    padding: 1em 0;
+    flex-basis: 65%;
+    & img { width: min(100%, 600px); }
+}
+
+aside {
+    flex-basis: 35%;
+    background-color: var(--light);
+    height: fit-content;
+    padding: 1em 1.5em;
+    margin: 1em 0 1em 1.5em;
+    border-radius: 25px;    
+    & h2 { padding: 0; }
+    & h3 { color: var(--dark); }
+}
+
+/* the styles for the footer */
+footer {
+    border-top: 2px solid var(--medium);
+    padding-top: .5em;
+    & p {
+        font-size: 80%;
+        text-align: right;
+    }
+}
+
+/*** menu styles ***/
+.navbar {
+    background-color: var(--dark_menu);
+    & ul { 
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+    }
+    & a {
+        display: block; 
+        padding: .25em 1em;
+        margin: .25em;
+        text-decoration: none; 
+        color: var(--light_menu);
+    }
+    & a:hover, a:focus { 
+        text-decoration: underline;
+    }
+    & a.current { 
+        border: 2px solid;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

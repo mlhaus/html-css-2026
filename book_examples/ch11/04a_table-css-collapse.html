@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales table with collapsed borders</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+    	table {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: .2em .7em;
+			text-align: right;
+			&.left { text-align: left; }
+		}
+		thead, tfoot {
+		    background-color: lightgreen;
+		}
+		tfoot {
+			font-weight: bold;
+		}
+    </style>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th class="left">Product</th>
+				<th>Year Invented</th>
+				<th>Sales</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="left">Frisbee</td>
+				<td>1948</td>
+				<td>$372,381</td>
+			</tr>
+			<tr>
+				<td class="left">Hula Hoop</td>
+				<td>1958</td>
+				<td>$305,447</td>
+			</tr>
+			<tr>
+				<td class="left">Whiffle Ball</td>
+				<td>1953</td>
+				<td>$292,444</td>
+			</tr>
+			<tr>
+				<td class="left">Slinky</td>
+				<td>1943</td>
+				<td>$328,992</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th class="left">Total Sales</th>
+				<td></td>
+				<td>$1,299,264</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>

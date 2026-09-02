@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>List Box</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: 0.25em;
+        }
+        select {
+            width: 100%;
+            font-size: inherit;
+            padding: .2em;
+            margin-bottom: .5em;
+        }
+        option {
+            padding: .2em;
+        }
+    </style>
+</head>
+
+<body>
+<form action="submit.html" method="post">
+    <label for="toppings">Choose one or more toppings: </label>
+    <select id="toppings" name="toppings" multiple size="4">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="sausage" selected>Sausage</option>
+        <option value="mushrooms">Mushrooms</option>
+        <option value="olives">Black olives</option>
+        <option value="onions">Onions</option>
+        <option value="bacon">Canadian bacon</option>
+        <option value="pineapple">Pineapple</option>
+    </select>
+</form>
+
+</body>
+</html>

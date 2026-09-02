@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="main.css">
+    <title>Specificity Layers</title>
+    <style>
+        @layer mobile-first, overrides;
+
+        @import url("styles/main.css") layer(overrides);
+
+        @layer mobile-first {
+            .navbar .menu .submenu {            /* layered */
+                color: rebeccapurple;
+            }
+        }
+
+        @media screen and (min-width: 600px) {  /* unlayered */
+            .navbar ul {                    
+                color: red;
+            }
+        }
+        /* unlayered style overrides the layered style */
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li>Menu item 1</li>
+            <li>Menu item 2
+                <ul class="submenu">
+                    <li>Submenu item 1</li>
+                    <li>Submenu item 2</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

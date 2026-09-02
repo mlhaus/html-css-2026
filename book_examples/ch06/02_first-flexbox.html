@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>How to create your first flexible box</title>
+    <style>
+        /* GENERIC STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1em;
+        }
+        main {
+            display: flex;
+            padding-top: 1em;
+        }
+        section {
+            flex-basis: 65%;
+        }
+        aside {
+            flex-basis: 35%;
+            background-color: lightskyblue;
+            border-radius: 1em;
+            padding: 1em;
+        }        
+        footer {
+            padding-top: 1em;
+        }        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>San Joaquin Valley Town Hall</h1>
+    </header>
+    <main>
+        <section>
+            <p>Welcome to San Joaquin Valley Town Hall. We have some fascinating
+                speakers for you this season!</p>
+        </section>
+        <aside>
+            <p>The luncheon starts 15 minutes after the lecture ends.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Please call today at (559) 555-1212 to get your tickets!</p>
+    </footer>
+</body>
+
+</html>

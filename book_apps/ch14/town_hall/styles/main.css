@@ -1,0 +1,195 @@
+/* variables for theme and menu colors */
+:root {
+    --dark: #931420;
+    --medium: #f2972e;
+    --light: #ffebc6;
+
+    --dark_menu: black;
+    --light_menu: white;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(90% + 0.3vw);
+    line-height: 1.5;
+    width: min(90%, 1024px);
+    margin: 1em auto;
+
+    display: grid;                         /* make the body a grid */
+    grid-template: repeat(4, auto) / 1fr;  /* define 4 rows and 1 column */
+    grid-template-areas:                   /* define the template areas */
+        "head"
+        "navi"
+        "main"
+        "foot";
+}
+h1, h2, h3 { line-height: 1.2; }
+h1, h2, h3, p, ul { padding: .25em 0; }
+h1 { font-size: 150%; }
+h2 { font-size: 135%; }
+h3 { font-size: 120%; }
+li, p { font-size: 95%; }
+a, em { font-weight: bold; }
+a:link, a:visited { color: var(--dark); }
+a:hover, a:focus { color: var(--medium); }
+ul { margin-left: 2em; }
+
+/* the styles for the header */
+header {
+    grid-area: head;         /* place the header in a grid area */
+    text-align: center;
+    & img {
+        display: none;
+    }
+    & h2 {
+        font-size: 225%; 
+        color: var(--medium);
+        padding: 0;
+    }
+    & h3 { 
+        font-style: italic; 
+        padding-bottom: 1em;
+    }
+}
+
+/* the styles for the main content */
+main { 
+    grid-area: main;                   /* place the main element in a grid area */
+    display: grid;                     /* make the main element a grid */
+    grid-template: auto auto / 1fr;    /* define two rows and one column */
+    gap: .5em;                         /* define the gap between grid areas */
+    grid-template-areas:               /* define the template areas */
+        "side" 
+        "sect";
+}
+
+section {
+    grid-area: sect;                   /* place the section element in a grid area */
+    padding-top: 1em;                  /* add padding to top of section */
+    & img { width: min(100%, 600px); }
+}
+
+aside {
+    grid-area: side;                    /* place the aside element in a grid area */
+    background-color: var(--light);
+    height: fit-content;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    border-radius: 25px;    
+    & h2 { padding: 0; }
+    & h3 { color: var(--dark); }
+}
+
+/* the styles for the footer */
+footer {
+    grid-area: foot;            /* place the footer in a grid area*/
+    margin-top: 1.5em;          /* add margin to top of footer */
+    border-top: 2px solid var(--medium);
+    padding-top: .5em;
+    & p {
+        font-size: 80%;
+        text-align: center;
+    }
+}
+
+/*** menu styles ***/
+.navbar {
+    grid-area: navi;              /* place the navigation bar in a grid area*/
+    position: relative;
+    background-color: var(--dark_menu);
+    & a {
+        display: block; 
+        padding: .25em 1em;
+        margin: .25em;
+        text-decoration: none; 
+        color: var(--light_menu);
+    }
+    & a:hover, a:focus { 
+        text-decoration: underline;
+    }
+    & a.current { 
+        border: 2px solid;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    & ul { 
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    display: none;
+    background-color: var(--dark_menu);
+}
+
+/* checkbox and menu button label */
+#checkbox-toggle { display: none; }
+
+.menu-btn {
+    display: block;
+    padding: 0.25em 1em;
+    color: var(--light_menu);
+    font-size: 24px;
+}
+.menu-btn::after {
+    content: "\2630";    /* hamburger icon */
+}
+
+#checkbox-toggle:checked ~ .menu {
+    display: block;
+}
+#checkbox-toggle:checked ~ .menu-btn::after {
+    content: "\2716";   /* 'X' icon */
+}
+
+/*** media queries ***/
+@media only screen and (min-width: 745px) {
+    /* change text alignment, display header image */
+    header {
+        text-align: left;
+        & img {
+            display: block;
+            float: left;
+            margin: .5em 1.25em .5em 0;
+            width: clamp(40px, 10%, 80px);
+        }
+    }
+    footer p { text-align: right; }
+
+    /* show menu, adjust spacing, hide menu button */
+    .menu {
+        position: relative;
+        display: grid;                          /* make the menu a grid */
+        grid-template: auto / repeat(5, auto);  /* define 1 row and 5 columns */
+        justify-content: space-evenly;          /* space columns evenly */
+    }
+    .menu-btn {
+        display: none;
+    }
+
+    /* make sure menu displays horizontally if menu checkbox is checked */
+    #checkbox-toggle:checked ~ .menu {
+        display: grid;   
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* make two columns */
+    main {
+        grid-template: auto / 1fr 35%;       /* define one row and two columns */
+        grid-template-areas: "sect side";    /* define the template areas */
+        gap: 5%;                             /* define the gap between grid areas */
+    }
+}

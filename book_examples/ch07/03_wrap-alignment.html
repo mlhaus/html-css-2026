@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap - alignment</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* nav menu */
+        :root {
+            --height: 8em;
+        }
+        nav {
+            background-color: black;
+        }
+        ul {
+            list-style-type: none;
+        }
+        #horizontal {
+            display: flex;
+        }
+        #horizontal-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #vertical {
+            display: flex;
+            flex-direction: column;
+            height: var(--height);
+        }
+        #vertical-wrap {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: var(--height);
+        }
+        a {
+            display: block;
+            padding: .5em 1em;
+            text-decoration: none;
+            color: white; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Horizontal</h1>
+    <nav>
+        <ul id="horizontal">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+    <br><br>
+
+    <h1>Horizontal wrap</h1>
+    <nav>
+        <ul id="horizontal-wrap">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+    <br><br>
+
+    <h1>Vertical</h1>
+    <nav>
+        <ul id="vertical">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+    <br><br><br><br>
+
+    <h1>Vertical wrap</h1>
+    <nav>
+        <ul id="vertical-wrap">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flex grow</title>
+    <style>
+        /* general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 90%;
+            margin: auto;
+        }
+        h1, p {padding: .5em 0; }
+
+        /* page layout */
+		main	{
+            display: flex;
+            text-align: center;
+            border: 1px solid black;
+        }
+        nav, aside, section {
+            padding: .5em;
+        }
+        nav, aside {
+            flex-basis: 100px;
+            flex-grow: 1;
+            background-color: lightskyblue;
+        }
+		section {
+            flex-basis: 200px;
+            flex-grow: 3;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow with fixed widths</h1>
+    <main>
+        <nav>Navigation</nav>
+        <section>Content</section>         
+        <aside>Sidebar</aside>
+    </main>
+</body>
+</html>

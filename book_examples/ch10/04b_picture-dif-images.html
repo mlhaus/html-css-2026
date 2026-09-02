@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Picture element</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<h2>Use different images based on viewport size</h2>
+		<picture>
+			<source media="(min-width: 960px)" srcset="images/mountains_far.png">
+			<source media="(min-width: 768px)" srcset="images/mountains_mid.png">
+			<source media="(min-width: 460px)" srcset="images/mountains_close.png">
+			<img src="images/mountains_mid.png" alt="">
+		</picture>
+		
+		<h2>Use an alternate format</h2>
+		<picture>
+			<source type="image.avif" srcset="images/mountains_small.avif">
+			<img src="images/mountains_small.png" alt="">
+		</picture>
+		
+	</body>
+</html>

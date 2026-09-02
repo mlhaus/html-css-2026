@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colors from colors</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<style>
+			h1 { margin: .5em; }
+
+			/* adjust saturation and lightness */
+			.ex1 { color: hsl(from rebeccapurple h 20% 60%); }
+
+			/* make more transparent */
+			.ex2 { color: rgb(from rebeccapurple r g b / .65); }
+
+			/* adjust hue based on current hue value */
+			.ex3 { color: hsl(from rebeccapurple calc(h - 150) s l); }
+			.ex4 { color: hsl(from rebeccapurple calc(h - 250) s l); }
+			
+			/* mix colors */
+			.ex5 { color: color-mix(in srgb, rebeccapurple, aqua); }
+			.ex6 { color: color-mix(in hsl, rebeccapurple 30%, orange); }
+			.ex7 { color: color-mix(in hsl, rebeccapurple, orange 30%); }
+		</style>
+	</head>
+
+	<body>
+		<h1 class="ex1">San Joaquin Valley Town Hall</h1>
+		<h1 class="ex2">San Joaquin Valley Town Hall</h1>
+		<h1 class="ex3">San Joaquin Valley Town Hall</h1>
+		<h1 class="ex4">San Joaquin Valley Town Hall</h1>
+		<hr>
+		<h1 class="ex5">San Joaquin Valley Town Hall</h1>
+		<h1 class="ex6">San Joaquin Valley Town Hall</h1>
+		<h1 class="ex7">San Joaquin Valley Town Hall</h1>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submenu</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* nav menu */
+        nav {
+            background-color: black;
+            color: white;
+        }
+        ul {
+            list-style-type: none; 
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: .5em 1em;
+            
+        }
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+        .menu {
+            display: flex; 
+            justify-content: space-around;
+        }
+        .menu li:has(.submenu) {
+            position: relative;
+            &:hover > .submenu {
+                display: block;
+            }
+        }
+        .submenu {
+            position: absolute;  /* relative to the item that contains the submenu */
+            left: 0;
+            display: none;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+	
+<body>
+    <header>
+        <h1>San Joaquin Valley Town Hall</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">About Us</a>
+                <ul class="submenu">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Staff</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to the San Joaquin Town Hall</h2>
+        <p>We've got some great speakers and events lined up this year!</p>
+    </main>
+</body>
+
+</html>

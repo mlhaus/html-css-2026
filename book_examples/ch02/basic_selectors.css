@@ -1,0 +1,27 @@
+/********************************************************* 
+* Description: Main style sheet 
+* Author: Anne Boehm 
+********************************************************/
+
+/* Type */
+body {
+    font-family: Arial, sans-serif; /* Changes the font style */ 
+    max-width: 800px;
+    padding: 1em;
+}
+h1 {
+    font-size: 160%;
+}
+
+/* ID */
+#copyright {
+    font-size: 75%;
+    text-align: center;
+    background-color: yellow;
+}
+
+/* Class */
+.base_color {
+    color: green;
+    background-color: orange;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Functional Psuedo-classes</title>
+	<style>
+		* { 
+			margin: 0;
+			padding: 0 0 .5em 0;
+		}
+		body {
+			width: 80%;
+			margin: 1em auto;
+		}
+
+		:is(header, nav) :is(h1, h2, h3, a) {
+			color: rebeccapurple;
+		}
+
+		h2:has(+ .subhead) { 
+			padding-bottom: 0; 
+		}
+
+		nav {
+			border: 1px solid black;
+			& ul { 
+				list-style: none; 
+				background-color: white;
+			}
+			& li { margin-right: 2.5em; }
+			& a { 
+				display: block;
+				padding: .25em;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			& a:not([href]) { font-weight: 900; }			
+		}
+		.menu {
+			display: flex; 
+		}
+		li:has(.submenu) {
+			position: relative;
+			&:hover > .submenu { display: block; }
+		}
+		.submenu {
+			position: absolute;  
+			left: 0;
+			display: none;
+			border: 1px solid black;
+		}
+
+		body:has(#dark:checked) {
+			background-color: rebeccapurple;
+			color: aliceblue;
+			& h1, a { color: aliceblue; }
+			& ul { background-color: rebeccapurple; }
+		}
+		#dark { margin-right: .5em; }
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>San Joaquin Valley Town Hall</h1>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li><a>Home</a></li>
+			<li><a href="#">Speakers</a></li>
+			<li><a href="#">About Us<small>&#9660;</small></a>
+				<ul class="submenu">
+					<li><a href="#">History</a></li>
+					<li><a href="#">Our Staff</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact Us<small>&#9660;</small></a>
+				<ul class="submenu">
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Phone</a></li>
+				</ul>
+			</li> 
+		</ul>
+	</nav>
+	<main>
+		<h2>Welcome to the San Joaquin Town Hall</h2>
+		<h3 class="subhead">We've got some great speakers and events lined up this year!</h3>
+		<input type="checkbox" id="dark"><label for="dark">Dark theme</label>
+	</main>
+</body>
+</html>

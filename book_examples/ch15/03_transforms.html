@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Transforms</title>
+    <style>
+		/* transforms CSS */
+		.image1, .image2 {
+			transition: 2s;
+		}
+		.image1:hover {
+			transform: rotateY(180deg);
+			transform-origin: right;
+		}
+		.image2:hover {
+			transform: rotateY(180deg);
+		}
+
+		/* other formatting */
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 100%;
+			width: 80%;
+			margin: auto;
+		}
+		img	{
+			width: 125px;
+			height: 100px;
+		}
+	</style>
+    </head>
+
+    <body>
+		<h3>Modified Origin Point</h3>
+        <img src="images/bldg.jpg" alt="Building">
+		<img src="images/bldg.jpg" class="image1" alt="Building">
+
+		<h3>Default Origin Point</h3>
+        <img src="images/bldg.jpg" alt="Building">
+		<img src="images/bldg.jpg" class="image2" alt="Building">
+    </body>
+</html>

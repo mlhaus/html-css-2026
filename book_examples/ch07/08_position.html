@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning example</title>
+    <link rel="stylesheet" href="main.css">
+    <style>        
+        footer, nav, aside {
+            font-weight: bold;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 0;  /* this example assumes body padding is 0 */
+            width: 90%;  /* this example assumes width is 90% */
+        }
+
+
+        /* page layout */
+		main	{
+            display: flex;
+            margin-bottom: 2em;  /* to adjust for fixed footer */
+        }
+		header {
+            padding: 0 1em;
+        }
+        footer, nav, aside, section {
+            padding: 0.5em;
+        }
+        header, footer {
+            background-color: lightskyblue;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: lightgray;
+        }
+        aside {
+            position: absolute;
+			top: 50%;
+            left: 5%;
+            right: 65%;
+            background-color: aquamarine;
+        }
+		section {
+            background-color: azure;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Positioning</h1></header>
+    <nav>This nav scrolls to the top of the screen, then it sticks.</nav>
+    <main>
+        <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas sed tempus urna. A cras semper auctor neque vitae tempus quam. Pellentesque id nibh tortor id aliquet lectus proin nibh. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Tellus id interdum velit laoreet id. Nisl condimentum id venenatis a condimentum vitae sapien. Duis at consectetur lorem donec massa sapien faucibus et. Pellentesque id nibh tortor id aliquet lectus. Mauris rhoncus aenean vel elit. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Amet nisl purus in mollis nunc. Eu volutpat odio facilisis mauris sit amet massa vitae tortor. Metus dictum at tempor commodo ullamcorper a. Fames ac turpis egestas integer eget. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+
+            Augue mauris augue neque gravida in fermentum et sollicitudin. Id porta nibh venenatis cras sed felis eget. Nunc sed blandit libero volutpat sed cras. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Morbi leo urna molestie at. Gravida neque convallis a cras semper. Tortor posuere ac ut consequat semper viverra nam. Aenean sed adipiscing diam donec adipiscing tristique risus. In ornare quam viverra orci sagittis eu volutpat. Elit eget gravida cum sociis natoque penatibus. Bibendum enim facilisis gravida neque. Morbi quis commodo odio aenean sed. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Diam vel quam elementum pulvinar etiam non. Elementum sagittis vitae et leo duis ut diam quam. Vitae nunc sed velit dignissim sodales. Lectus nulla at volutpat diam ut. Sit amet facilisis magna etiam tempor orci. Sit amet est placerat in egestas erat imperdiet sed.
+
+            Nibh mauris cursus mattis molestie. Massa tempor nec feugiat nisl pretium. Etiam non quam lacus suspendisse faucibus interdum posuere. Enim facilisis gravida neque convallis a. Commodo ullamcorper a lacus vestibulum sed. Est ultricies integer quis auctor. Aliquam eleifend mi in nulla. Vitae et leo duis ut diam quam nulla porttitor massa. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Tempus egestas sed sed risus pretium quam vulputate dignissim.
+
+            Justo eget magna fermentum iaculis eu. Magna ac placerat vestibulum lectus. Fermentum et sollicitudin ac orci phasellus. Sit amet est placerat in egestas erat imperdiet sed euismod. Vel facilisis volutpat est velit egestas dui id ornare arcu. Ridiculus mus mauris vitae ultricies. Ipsum a arcu cursus vitae congue mauris. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Id semper risus in hendrerit. In pellentesque massa placerat duis ultricies lacus sed. Ultrices neque ornare aenean euismod. Praesent tristique magna sit amet. Eros in cursus turpis massa tincidunt dui ut ornare. Imperdiet massa tincidunt nunc pulvinar sapien et. Dolor magna eget est lorem ipsum. Vestibulum morbi blandit cursus risus at ultrices mi. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nam aliquam sem et tortor consequat id porta nibh. Id faucibus nisl tincidunt eget nullam non nisi est.
+            
+            Molestie at elementum eu facilisis sed odio. Mi eget mauris pharetra et ultrices neque ornare. Cursus turpis massa tincidunt dui ut. Sed felis eget velit aliquet sagittis id. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Mattis molestie a iaculis at erat. Sed id semper risus in hendrerit gravida rutrum. Enim diam vulputate ut pharetra sit amet aliquam id diam. Ac turpis egestas integer eget aliquet. Porta non pulvinar neque laoreet suspendisse. Massa sed elementum tempus egestas sed. Sapien pellentesque habitant morbi tristique. Quis vel eros donec ac. Sapien et ligula ullamcorper malesuada proin. Risus quis varius quam quisque id diam. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.
+
+            Eget mi proin sed libero. Id semper risus in hendrerit gravida rutrum quisque non tellus. In metus vulputate eu scelerisque felis imperdiet. Scelerisque purus semper eget duis at tellus at urna. Odio ut sem nulla pharetra diam sit amet. Sodales ut etiam sit amet nisl. Nulla facilisi nullam vehicula ipsum a. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Curabitur gravida arcu ac tortor dignissim. Pretium vulputate sapien nec sagittis aliquam malesuada. Urna cursus eget nunc scelerisque viverra mauris. Lacus sed viverra tellus in hac habitasse platea. Tempus urna et pharetra pharetra. Etiam non quam lacus suspendisse faucibus interdum posuere.
+        </section>
+        <aside>This absolutely positioned sidebar isn't in the flow of
+            the page.</aside>
+    </main>
+    <footer>This footer is fixed to the bottom of the screen</footer>
+</body>
+</html>

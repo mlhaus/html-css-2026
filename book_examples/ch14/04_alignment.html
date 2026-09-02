@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>How to position and align grid items in a container</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        div { 
+            background-color: #6FA8CF; 
+        }
+        section  {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 100px 100px;
+            gap: 20px;
+            width: 100%;
+			height: 300px;
+            background: #C8DFEE;
+        }
+		/* justify-content (center horizontally) */
+        #grid1 {
+			justify-content: center;
+            align-content: center;
+        }
+		/* justify-items (center horizontally) */
+        #grid2 {
+			justify-items: center;
+            align-items: center;
+        }        
+		/* align-content (end vertically) */
+        #grid3 {
+			align-content: end;
+        }
+    </style>
+</head>
+<body>
+    <h2>justify-content:center</h2>
+    <section id="grid1">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </section>
+
+    <h2>justify-items:center</h2>
+    <section id="grid2">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </section>
+
+    <h2>align-content:end</h2>
+    <section id="grid3">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </section>
+</body>
+</html>

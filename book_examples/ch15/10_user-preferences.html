@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>User Preferences</title>
+	<style>
+		/* prefers-reduced-motion */
+		@keyframes move {
+			from {margin-left: 5%;} to {margin-left: 35%;}
+		}
+		h1 {
+			animation: move 4s ease-in-out infinite alternate; 
+		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			h1 { 
+				animation: none; 
+			}
+		}
+
+		/* prefers-contrast */
+		main {
+			border: 2px dashed rebeccapurple;
+			border-radius: 10px;
+			padding: 0 1em;
+		}
+		@media screen and (prefers-contrast: more) {
+			main { 
+				border-width: 3px; 
+				border-style: solid;
+			}
+		}
+		@media screen and (prefers-contrast: less) {
+			main { border-width: 1px; }
+		}
+		@media screen and (prefers-contrast: custom) {
+			main { border: none; }
+		}
+
+		/* prefers-color-scheme */
+		@media screen and (prefers-color-scheme: dark) {
+			body { 
+				background-color: rebeccapurple; 
+				color: white;
+			}
+			main { border-color: white; }
+		}
+
+		/* other formatting */
+		body {
+			width: 80%;
+			margin: auto;
+		}
+		h1 {
+			margin-left: 5%;  
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>San Joaquin Valley Town Hall</h1>
+	</header>
+	<main>
+		<h2>Welcome!</h2>
+		<p>We have some exciting lectures this year!</p>
+	</main>
+</body>
+</html>

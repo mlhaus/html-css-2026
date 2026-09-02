@@ -1,0 +1,79 @@
+/* variables for the colors */
+:root {
+	--light: #f2972e;
+	--dark: #931420;
+}
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* default styles */
+html {
+	min-height: 100%; /* so the box stretches across the entire screen */
+    background-image: linear-gradient(to bottom, white 0%, var(--light) 200%); 
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 90%;
+	margin: 1em auto;
+	background-color: white;
+	border: 1px solid var(--dark);
+	border-radius: 20px;
+	padding: 1em;    /* adds space between border and content */
+}
+
+h1, h2, h3, p, ul { padding: .5em 0; }
+h1 { font-size: 150%; }
+h2 { font-size: 135%; }
+h3 { font-size: 120%; }
+li, p { font-size: 95%; }
+a, em { font-weight: bold; }
+a:link, a:visited { color: var(--dark);}
+a:hover, a:focus { color: var(--light); }
+ul { 
+	line-height: 1.5; 
+	margin-left: 2em;
+}
+
+/* the styles for the header */
+header {
+	text-align: center;
+	border-bottom: 2px solid var(--light);
+	& img { 
+		float: left; 
+		border-radius: 10px 0 0 0;
+	}
+	& h2 {
+		font-size: 225%;
+		color: var(--light);
+		padding: 0;
+	}
+	& h3 {
+		font-style: italic;
+		color: var(--dark);
+		padding-bottom: 1em;
+	}
+}
+
+/* the styles for the main content */
+main { 
+	clear: left; 
+	padding-bottom: .5em;
+	& a.date_passed { color: gray; }
+}
+
+/* the styles for the footer */
+footer {
+	padding-top: .5em;
+	border-top: 2px solid var(--light);
+    & p {
+		font-size: 80%;
+		text-align: right;
+	}
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>1-column</title>
+    <meta charset="utf-8">
+    <style>
+        /* basic setup */
+        * {
+            margin: 0;
+            padding: 0; 
+        }
+        h2 { 
+            padding: 0.75em; 
+        }
+    
+        /* the styles for the header, main content, sidebar, and footer */
+        body {
+            font-family: Arial, sans-serif;
+            width: 90%;
+            background-color: white;
+            margin: 15px auto;
+            border: 1px solid black; 
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        section {
+            background-color: azure;
+        }
+        aside {
+            background-color: aquamarine;
+        }
+        header, footer { 
+            background-color: lightskyblue; 
+        }
+    </style>
+</head>
+
+<body>
+    <header><h2>Header</h2></header>
+    <main>
+        <section><h2>Section</h2></section>
+        <aside><h2>Aside</h2></aside>    
+    </main>
+    <footer><h2>Footer</h2></footer>
+</body>
+
+</html>

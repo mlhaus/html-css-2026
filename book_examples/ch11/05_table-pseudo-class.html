@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales table with pseudo-classes</title>
+    <link rel="stylesheet" href="main.css">
+	<style>
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin: 1em auto;
+		}
+		thead, tfoot {
+			background-color: lightgreen;
+			font-weight: bold;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: .2em .7em;
+			text-align: right;
+		}
+		th:first-child, td:first-child {
+			text-align: left;
+		}
+		th:nth-child(2), td:nth-child(2) {
+			text-align: center;
+		}
+		tbody tr:nth-child(even) {
+			background-color: silver;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Year Invented</th>
+				<th>Sales</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Frisbee</td>
+				<td>1948</td>
+				<td>$372,381</td>
+			</tr>
+			<tr>
+				<td>Hula Hoop</td>
+				<td>1958</td>
+				<td>$305,447</td>
+			</tr>
+			<tr>
+				<td>Whiffle Ball</td>
+				<td>1953</td>
+				<td>$292,444</td>
+			</tr>
+			<tr>
+				<td>Slinky</td>
+				<td>1943</td>
+				<td>$328,992</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Total Sales</th>
+				<td></td>
+				<td>$1,299,264</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

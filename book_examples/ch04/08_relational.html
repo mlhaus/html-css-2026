@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Relational selectors</title>
+		<meta charset="utf-8">
+		<style>
+			body { padding: 0 1em; }
+			
+			main p { margin-left: 2em; }
+
+			main > p { font-variant: small-caps; }
+
+			h2 + p { font-weight: bold; }			
+			
+			h2 ~ p { font-family: cursive; }
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<h1>This Season's Town Hall speakers</h1>
+			<p>We have some fascinating speakers for you this season!</p>
+			<ul class="speakers">
+				<li>January: <a href="speakers/brancaccio.html">David Brancaccio</a></li>
+				<li>February: <a href="speakers/fitzpatrick.html">Robert Fitzpatrick</a></li>
+			</ul>
+			<section> 
+				<h2>Post-lecture luncheons</h2>
+				<p>Extend the excitement by going to the luncheons.</p>
+				<p>A limited number of tickets are available.</p>
+				<p>Contact us by phone at (559) 555-1212.</p>
+			</section>
+		</main>
+	</body>
+</html>

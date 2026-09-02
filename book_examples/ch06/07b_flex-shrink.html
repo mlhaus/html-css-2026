@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flex shrink</title>
+    <style>
+        /* general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 90%;
+            margin: auto;
+        }
+        h1, p {padding: .5em 0; }
+
+        /* page layout */
+		main	{
+            display: flex;
+            text-align: center;
+            border: 1px solid black;
+        }
+        nav, aside, section {
+            padding: .5em;
+            flex-basis: 250px;
+            background-color: lightskyblue;
+        }
+        nav {
+            flex-shrink: 0;
+        }
+        section, aside {
+            flex-shrink: 1;
+        }
+		section {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-shrink with fixed widths</h1>
+    <main>
+        <nav>Navigation</nav>
+        <section>Content</section>
+        <aside>Sidebar</aside>             
+    </main>
+</body>
+</html>

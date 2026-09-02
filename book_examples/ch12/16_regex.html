@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Form Validation using Patterns</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: 0.25em;
+        }
+        input {
+            width: 100%;
+            padding: .2em;
+            margin-bottom: 0.5em;
+            font-size: inherit;
+        }
+        button {
+            margin-top: .25em;
+            padding: .5em;
+            font-size: inherit;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<form action="submit.html" method="post" autocomplete="off">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+        title="Must be 999-999-9999">
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

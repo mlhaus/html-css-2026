@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Box Model</title>
+		<meta charset="utf-8">
+		<style>
+			body { 
+			    border: 3px dotted black; 
+			    margin: 1em;
+			}
+			main {
+			    border:  2px solid black;
+			    width:   80%;  
+			    margin:  2em;           /* all four sides */
+			    padding: 1em;           /* all four sides */
+			}
+			h1, p {
+			    border: 1px dashed black;
+			    padding: 1em;           /* all four sides */
+			    padding-left: 20px;     /* override left side with absolute measurement */
+			}
+			h1 {
+			    margin:  .5em 0 .25em;  /* .5em top, 0 right and left, .25em bottom */
+			}
+			p {
+			    margin: 0;              /* all four sides */
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<h1>San Joaquin Valley Town Hall</h1>
+			<p>Welcome to San Joaquin Valley Town Hall.
+			We have some fascinating speakers for you this season!</p>
+		</main>
+	</body>
+</html>

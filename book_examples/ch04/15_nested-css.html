@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nested CSS</title>
+		<meta charset="utf-8">
+		<style>
+			body { 
+				padding: 0 1em;
+			}
+
+			header {
+				text-align: center;
+				& img { 
+					float: left; 
+				}
+				& h2 {
+					font-size: 240%;
+				}
+				& h3 {
+					font-size: 130%;
+					font-style: italic;
+				}
+			}
+
+			main {
+				&::first-line { 
+					font-weight: bold; 
+				}
+				&::first-letter { 
+					font-size: 150%; 
+				}
+				& li:last-child { 
+					font-variant: small-caps; 
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src="images/logo.gif" alt="Town Hall Logo" width="80">
+			<h2>San Joaquin Valley Town Hall</h2>
+			<h3>Bringing cutting-edge speakers to the valley</h3>
+		</header>	
+		<main>
+			<p>Welcome to San Joaquin Valley Town Hall.</p> 
+			<p>We have some fascinating speakers for you this season!</p>
+			<ul>
+				<li><a href="speakers/brancaccio.html">David Brancaccio</a></li>
+				<li><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></li>
+				<li class="new"><a href="speakers/chua.html">Amy Chua</a></li>
+			</ul>
+		</main>
+	</body>
+</html>

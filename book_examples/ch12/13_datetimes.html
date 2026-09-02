@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Dates and Times</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		label {
+			display: block;
+			margin-bottom: 0.25em;
+		}
+		input {
+			width: 100%;
+			padding: .2em;
+			margin-bottom: 0.75em;
+		}
+	</style>
+</head>
+<body>
+	<form id="datetime_form" action="submit.html" method="post">
+		<label for="week">Week:</label>
+		<input type="week" id="week" name="week">
+
+		<label for="month">Month:</label>
+		<input type="month" id="month" name="month">
+
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time">
+
+		<label for="datetime">Local date and time:</label>
+		<input type="datetime-local" id="datetime" name="datetime">
+	</form>
+</body>
+</html>

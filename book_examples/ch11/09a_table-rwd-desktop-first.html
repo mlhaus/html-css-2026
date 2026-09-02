@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales table with media query</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+		/**** desktop first ****/
+        table {
+            width: 50%;   /* make the table fluid */
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* make the columns fluid */
+        th:first-child { width: 45%; }
+        th:nth-child(2) { width: 35%; }
+        th:nth-child(3) { width: 20%; }
+
+        th, td {
+            border: 1px solid black;
+            padding: .2em .7em;
+            text-align: right;
+        }
+        thead, tfoot {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+
+        /**** small screens ****/
+        @media only screen and (max-width: 640px) {
+            /* make cells block rather than inline */
+            th, td { display: block; }
+
+            /* hide header and first 2 cells of footer */
+            thead { display: none; }
+            tfoot th, tfoot td:nth-of-type(1) { display: none; }
+
+            /* style first data cell like a header */
+            tbody td:first-child {
+                font-weight: bold;
+                background-color: lightgreen;
+            }
+
+            /* turn off borders that are no longer needed */
+            table { border: none; }
+            tbody td { border-bottom: none; }
+               
+            /* use psuedo-elements to add headings to cells */
+            tbody td:nth-of-type(2)::before { content: "Year Invented: "; }
+            tbody td:nth-of-type(3)::before { content: "Sales: "; }  
+            tfoot td:nth-of-type(2)::before { content: "Total Sales: "; }  
+            
+            /* position pseudo-elements */
+            td::before { 
+                position: absolute;
+                left: 30px;
+            }
+        }
+
+        /**** tiny screens ****/
+        @media only screen and (max-width: 350px) {            
+            /* remove absolute postioning so data doesn't overlap headings */
+            td::before { position: static; }
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Year Invented</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frisbee</td>
+                <td>1948</td>
+                <td>$372,381</td>
+            </tr>
+            <tr>
+                <td>Hula Hoop</td>
+                <td>1958</td>
+                <td>$305,447</td>
+            </tr>
+            <tr>
+                <td>Whiffle Ball</td>
+                <td>1953</td>
+                <td>$292,444</td>
+            </tr>
+            <tr>
+                <td>Slinky</td>
+                <td>1943</td>
+                <td>$328,992</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total Sales</th>
+                <td></td>
+                <td>$1,299,264</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

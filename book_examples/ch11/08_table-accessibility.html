@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible sales table</title>
+    <link rel="stylesheet" href="main.css">
+	<style>
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+			margin: .5em auto;
+		}
+		caption {
+			font-weight: bold;
+			font-size: 115%;
+			padding-bottom: .5em;
+		}
+		thead, tfoot {
+			background-color: lightgreen;
+			font-weight: bold;
+			border: 1px solid black;
+		}
+		th, td {
+			padding: .2em .7em;
+			text-align: right;
+			border: 1px solid black;
+		}
+		th:first-child, td:first-child {
+			text-align: left;
+		}
+		th:nth-child(2), td:nth-child(2) {
+			text-align: center;
+		}
+		tbody tr:nth-child(even) {
+			background-color: silver;
+		}
+	</style>
+</head>
+
+<body>
+	<figure>
+		<table>
+		<caption>Total sales by product for famous toys</caption>
+		<thead>
+			<tr>
+				<th id="hdr_product" scope="col">Product</th>
+				<th id="hdr_year" scope="col" >Year Invented</th>
+				<th id="hdr_sales" scope="col" >Sales</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td headers="hdr_product">Frisbee</td>
+				<td headers="hdr_year">1948</td>
+				<td headers="hdr_sales">$372,381</td>
+			</tr>
+			<tr>
+				<td headers="hdr_product">Hula Hoop</td>
+				<td headers="hdr_year">1958</td>
+				<td headers="hdr_sales">$305,447</td>
+			</tr>
+			<tr>
+				<td headers="hdr_product">Whiffle Ball</td>
+				<td headers="hdr_year">1953</td>
+				<td headers="hdr_sales">$292,444</td>
+			</tr>
+			<tr>
+				<td headers="hdr_product">Slinky</td>
+				<td headers="hdr_year">1943</td>
+				<td headers="hdr_sales">$328,992</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th id="hdr_total" scope="row">Total Sales</th>
+				<td></td>
+				<td headers="hdr_sales hdr_total">$1,299,264</td>
+			</tr>
+		</tfoot>
+		</table>
+	</figure>
+</body>
+
+</html>

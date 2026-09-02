@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales table with merged cells</title>
+    <link rel="stylesheet" href="main.css">
+	<style>
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+			margin: .5em auto;
+		}
+		thead, tfoot {
+			background-color: lightgreen;
+		}
+		tfoot {
+			font-weight: bold;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: .2em .7em;
+			text-align: right;
+		}
+		th:first-child, td:first-child {
+			text-align: left;
+		}
+		tr:first-child {
+			& th:first-child {
+				vertical-align: bottom; 
+			}
+			& th:nth-child(2) {
+				text-align: center; 
+			}
+		}
+	</style>
+</head>
+
+<body>
+<table>
+	<thead>
+		<tr>
+			<th rowspan="2">Product</th>
+			<th colspan="4">Sales</th>
+		</tr>
+		<tr>
+			<th>North</th>
+			<th>South</th>
+			<th>West</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Frisbee</td>
+			<td>$55,174</td>
+			<td>$73,566</td>
+			<td>$177,784</td>
+			<td>$306,524</td>
+		</tr>
+		<tr>
+			<td>Hula Hoop</td>
+			<td>$28,775</td>
+			<td>$39,995</td>
+			<td>$239,968</td>
+			<td>$308,738</td>
+		</tr>
+		<tr>
+			<td>Whiffle Ball</td>
+			<td>$27,688</td>
+			<td>$24,349</td>
+			<td>$168,228</td>
+			<td>$220,265</td>
+		</tr>
+		<tr>
+			<td>Slinky</td>
+			<td>$23,082</td>
+			<td>$24,858</td>
+			<td>$129,619</td>
+			<td>$177,559</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Sales Totals</th>
+			<td>$134,719</td>
+			<td>$162,768</td>
+			<td>$715,599</td>
+			<td>$1,013,086</td>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>

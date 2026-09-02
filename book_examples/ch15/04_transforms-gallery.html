@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Transforms Gallery</title>
+    <style>
+        /* transforms CSS */
+        .image1:hover {
+            transform: matrix(0.5, 0.5, -0.5, 1, 0, 0);
+        }
+        .image2:hover {
+            transform: rotate(20deg);
+        }
+        .image3:hover {
+            transform: scaleX(1.4);
+        }
+        .image4:hover {
+            transform: scaleY(1.4);
+        }
+        .image5:hover {
+            transform: skewX(-20deg);
+        }
+        .image6:hover {
+            transform: skewY(-30deg);
+        }
+        .image7:hover {
+            transform: translateX(30px);
+        }
+        .image8:hover {
+            transform: translateY(20px);
+        }
+
+        /* other formatting */
+        body {
+			font-family: Arial, sans-serif;
+			font-size: 100%;
+			width: 80%;
+			margin: auto;
+		}
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            width: 75%;	
+            & li { 
+                margin-top: 2em;
+                margin-right: 2.5em; 
+            }
+        }
+		img	{
+			width: 125px;
+			height: 100px;
+            display: block;
+            margin-top: 1em;
+		}
+    </style>
+</head>
+
+<body>
+    <h3>Transform Gallery</h3>
+    <ul>
+        <li>Matrix      <img src="images/01.jpg" class="image1" alt="Building"></li>
+        <li>Rotate      <img src="images/02.jpg" class="image2" alt="Office"></li>
+        <li>ScaleX      <img src="images/03.jpg" class="image3" alt="Tables"></li>
+        <li>ScaleY      <img src="images/04.jpg" class="image4" alt="Tables"></li>
+        <li>SkewX       <img src="images/05.jpg" class="image5" alt="Building"></li>
+        <li>SkewY       <img src="images/06.jpg" class="image6" alt="Desk"></li>
+        <li>TranslateX  <img src="images/07.jpg" class="image7" alt="Building"></li>
+        <li>TranslateY  <img src="images/08.jpg" class="image8" alt="Building"></li>
+    </ul>
+</body>
+</html>

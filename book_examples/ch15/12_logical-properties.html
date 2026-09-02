@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Logical properties</title>
+	<style>
+		body {
+			inline-size: 80%;
+			margin: auto;
+		} 
+		main { 
+			display: flex; 
+		}
+		section, aside { 
+			flex-basis: 50%; 
+			background-color: lightblue;
+			border-radius: 10px;
+			padding-inline-start: 1em;      
+		}
+		section {
+			margin-inline-end: 1em;
+		}
+		aside {
+			margin-inline-start: 1em;
+		}
+		footer {
+			border-block: 1px solid;    /* start and end */
+			padding-block: .25em;       /* start and end */
+			margin-block-start: 1em;
+		}
+		input[type=reset] { 
+			margin-block: .25em; 
+		}
+
+		/* change direction or writing mode when checked */
+		body:has(#rtl:checked) {
+			direction: rtl;
+		}
+		body:has(#vlr:checked) {
+			writing-mode: vertical-lr;
+		}
+		body:has(#vrl:checked) {
+			writing-mode: vertical-rl;
+		}
+	</style>
+</head>
+
+<body>
+	<header><h1>Logical Properties</h1></header>
+	<main>
+		<section>
+			<h2>Direction</h2>
+			<p>The default direction is ltr</p>
+		</section>
+		<aside>
+			<h2>Writing mode</h2>
+			<p>The default writing-mode is horizontal-tb</p>
+		</aside>
+	</main>
+	<footer>
+		<form> <!-- so reset button works -->
+			direction: rtl<input type="checkbox" id="rtl"><br>
+			writing-mode: vertical-lr<input type="radio" name="vertical" id="vlr"><br>
+			writing-mode: vertical-rl<input type="radio" name="vertical" id="vrl"><br>
+			<input type="reset" value="Clear">
+		</form>
+	</footer>
+</body>
+</html>

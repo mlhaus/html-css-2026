@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Filter Gallery</title>
+    <style>
+        /* filters CSS */
+        .image1 {
+            filter: blur(2px);
+        }
+        .image2 {
+            filter: brightness(50%);
+        }
+        .image3 {
+            filter: contrast(50%);
+        }
+        .image4 {
+            filter: drop-shadow(2px 2px 5px #333);
+        }
+        .image5 {
+            filter: grayscale(50%);
+        }
+        .image6 {
+            filter: hue-rotate(90deg);
+        }
+        .image7 {
+            filter: invert(.80);
+        }
+        .image8 {
+            filter: opacity(.50);
+        }
+        .image9 {
+            filter: saturate(30%);
+        }
+        .image10 {
+            filter: sepia(100%) blur(1px);
+        }
+
+
+        /* other formatting */
+        * {
+            margin: 0;
+            padding: 0 0 1em 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 100%;
+            width: 80%;
+            margin: 1em auto;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;	
+        }
+        img	{
+            width: 150px;
+            height: 130px;
+            display: block;
+            margin-top: .25em;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Filter Gallery</h3>
+    <ul>
+        <li>Blur		<img src="images/01.jpg" class="image1" alt=""></li>
+        <li>Brightness	<img src="images/01.jpg" class="image2" alt=""></li>
+        <li>Contrast	<img src="images/01.jpg" class="image3" alt=""></li>
+        <li>Drop Shadow	<img src="images/01.jpg" class="image4" alt=""></li>
+        <li>Grayscale	<img src="images/01.jpg" class="image5" alt=""></li>
+        <li>Hue Rotate	<img src="images/01.jpg" class="image6" alt=""></li>
+        <li>Invert		<img src="images/01.jpg" class="image7" alt=""></li>
+        <li>Opacity		<img src="images/01.jpg" class="image8" alt=""></li>
+        <li>Saturate	<img src="images/01.jpg" class="image9" alt=""></li>
+        <li>Sepia/blur	<img src="images/01.jpg" class="image10" alt=""></li>
+    </ul>
+</body>    
+</html>

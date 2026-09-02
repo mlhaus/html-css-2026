@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Style links</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        main {
+            padding-top: 1em;
+        }
+
+        /* nav menu */
+        nav {
+            background-color: black;
+        }
+        ul {
+            display: flex;
+            list-style-type: none; 
+        }
+        a {
+            text-decoration: none;
+            color: white; 
+            display: block;
+            padding: .5em 1em;
+            border-radius: 10px;
+        }
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+        a.current {
+            color: black; 
+            background-color: lightgray;
+            text-decoration: none;
+        }
+        li {
+            margin: .25em;
+        }
+    </style>
+</head>
+	
+<body>
+    <header>
+        <h1>San Joaquin Valley Town Hall</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current">Speakers</a></li>
+            <li><a href="about.html">About Us</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to San Joaquin Valley Town Hall.</p>
+    </main>
+</body>
+
+</html>

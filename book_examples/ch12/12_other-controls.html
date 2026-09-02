@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Other Controls</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		label {
+			display: block;
+			margin-bottom: 0.25em;
+		}
+		input {
+			width: 100%;
+			padding: .2em;
+			margin-bottom: .75em;
+			font-size: inherit;
+		}
+		button {
+			font-size: inherit;
+			padding: 0.5em;
+			color: white;
+			background-color: green;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="submit.html" method="post">
+		<label for="investment">Monthly Investment: </label>
+		<input type="number" id="investment"
+			   min="100" max="1000" step="100" value="300">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email">
+
+		<label for="link">Website:</label>
+		<input type="url" id="link">
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone">
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

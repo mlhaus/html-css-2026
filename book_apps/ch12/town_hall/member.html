@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>San Joaquin Valley Town Hall</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+    
+<body>
+    <header>
+        <img src="images/logo.gif" alt="Town Hall Logo">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Bringing cutting-edge speakers to the valley</h3>
+    </header>
+    <nav class="navbar">
+        <!-- hamburger menu button -->
+        <input type="checkbox" id="checkbox-toggle">
+        <label for="checkbox-toggle" class="menu-btn"></label>
+        
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="member.html" class="current">Become a Member</a></li>
+            <li><a href="#">About Us</a></li>         
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Become a Member</h1>
+            <form action="register_account.html" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" autofocus required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="membership_type">Membership Type:</label>
+                <select name="membership_type" id="membership_type">
+                    <option value="junior">Junior</option>
+                    <option value="regular">Regular</option>            
+                    <option value="charter">Charter</option>
+                </select>
+                
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required
+                        placeholder="At least 8 letters or numbers"
+                        pattern="[a-zA-Z0-9]{8,}" 
+						title="Must be at least 8 alphanumeric characters">
+                
+                <label for="verify">Verify Password:</label>
+                <input type="password" name="verify" id="verify" required>
+                
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <aside>
+            <h2>This season's guest speakers</h2>
+            <nav>
+              <ul>
+                <li>October: <a class="date_passed" href="#">David Brancaccio</a></li>
+                <li>November: <a class="date_passed" href="#">Andrew Ross Sorkin</a></li>
+                <li>January: <a href="#">Amy Chua</a></li>
+                <li>February: <a href="sampson.html">Scott Sampson</a></li>
+                <li>March: <a href="#">Carlos Eire</a></li>
+                <li>April: <a href="#">Ronan Tynan</a></li>
+              </ul>
+            </nav>
+          </aside>
+      </main>
+
+    <footer>
+        <p>&copy; Copyright San Joaquin Valley Town Hall.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Buttons Styled</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        h3 {
+            margin: 0.25em 0;
+        }
+		.button-styled {
+			cursor: pointer;
+			color: white;
+			background-color: blue;
+			font-weight: bold;
+			font-size: 100%;
+			padding: 0.5em;
+			border-radius: 10px;
+			&:hover {
+				color: black;
+				background-color: white;
+			}
+		}
+		.button-primary { 
+			background-color: green; 
+		}
+		.button-danger { 
+			background-color: red; 
+		}
+		.button-disabled {
+			opacity: 0.5;
+			cursor: default;
+		}
+    </style>
+</head>
+
+<body>
+
+<h3>Two styled buttons</h3>
+<button type="submit" class="button-styled button-primary">Submit</button>
+<button type="reset" class="button-styled button-danger">Cancel</button>
+
+<h3>Two buttons with disabled styling</h3>
+<button type="submit" disabled 
+        class="button-styled button-primary button-disabled">Submit</button>
+<button type="reset" disabled 
+        class="button-styled button-danger button-disabled">Cancel</button>
+
+<h3>A button with a hover effect</h3>
+<button class="button-styled">Start Slide Show</button>
+
+</body>
+</html>

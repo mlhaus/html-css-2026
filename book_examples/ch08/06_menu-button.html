@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* general styles */
+        body {
+            width: 90%;
+            margin: auto;
+        }
+
+
+        /*** menu styles ***/
+        .navbar {
+            background-color: black;
+            & a {
+                display: block; 
+                padding: .25em 1em;
+                margin: .25em;
+                text-decoration: none; 
+                color: white;
+            }
+            & a:hover, a:focus { 
+                text-decoration: underline;
+            }
+            & a.current { 
+                border: 2px solid;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            & ul { 
+                list-style-type: none; 
+                margin: 0;
+                padding: 0 0 .5em 0;
+            }
+        }
+
+        /*** book example code ***/
+        .menu {
+            display: none;
+        }
+
+        .menu_btn {                                
+            display: block;
+            padding: 1em;
+            color: white; 
+        }
+        .menu_btn::after { content: "\2630"; }      /* hamburger icon */
+
+        #checkbox_toggle { display: none; }         /* checkbox is always hidden */
+
+        /* when checkbox is checked, show menu and change icon */
+        #checkbox_toggle:checked ~ .menu { 
+            display: block; 
+        }
+
+        #checkbox_toggle:checked ~ .menu_btn::after {
+            content: "\2716";                       /* close (X) icon */
+        }
+    </style>
+</head>
+	
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="checkbox_toggle">
+        <label for="checkbox_toggle" class="menu_btn"></label>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+</body>
+
+</html>

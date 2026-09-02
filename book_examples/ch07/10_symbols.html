@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* nav menu */
+        ul {
+            display: flex;
+            list-style-type: none; 
+        }
+        li { 
+            padding: 1em 1em 1em 2em; 
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .submenu-link::after {
+            content: "\25bc";
+            font-size: small;
+        }
+    </style>
+</head>
+	
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="speakers.html">Speakers<small>&#9660;</small></a></li>
+            <li><a href="aboutus.html" class="submenu-link">About Us</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

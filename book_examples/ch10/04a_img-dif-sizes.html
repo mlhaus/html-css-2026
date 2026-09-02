@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Img element</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<h2>Use different image sizes based on viewport size</h2>
+		<img src="images/mountains_medium.png" alt="mountains"
+    		srcset="images/mountains_large.png 800w, 
+            	images/mountains_medium.png 600w, 
+            	images/mountains_small.png 400w" 
+     		sizes="(min-width: 1200px) 800px, (min-width: 800px) 600px, 75vw">
+	</body>
+</html>

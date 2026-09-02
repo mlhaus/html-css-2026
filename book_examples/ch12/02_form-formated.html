@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatted Form</title>
+	<link rel="stylesheet" href="styles/main.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: .25em;
+        }
+        input {
+            font-size: inherit;
+            padding: .4em;
+            width: 100%;
+            margin-bottom: .5em;
+        }
+        button { 
+            padding: .5em;
+            width: 8em;
+            font-weight: bold;
+            font-size: inherit;
+            color: white;
+            background-color: forestgreen;
+        }
+        button:hover {
+            color: black;
+            background-color: lightgreen;
+        }
+        input, button {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit.html" method="post">
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="johndoe@example.com">
+        </div>
+        <div>
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" value="John">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>   
+</body>
+</html>

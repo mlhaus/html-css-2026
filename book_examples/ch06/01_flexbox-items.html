@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Horizontal links</title>
+    <style>
+        /* GENERIC STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1em;
+        }
+        main {
+            margin: 1em 0;
+            display: flex;
+            flex-direction: row;
+            border: solid 2px black;
+            & nav, section, aside {
+                padding: .5em;
+                border: solid 2px black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>San Joaquin Valley Town Hall</h1>
+    </header>
+    <main>
+        <nav>Navigation</nav>
+        <section>Content</section>
+        <aside>Sidebar</aside>
+    </main>
+    <footer>
+        <p>Please call today at (559) 555-1212 to get your tickets!</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/* variables for theme colors */
+:root {
+	--light: #f2972e;
+    --dark: #931420;
+    --aside: #ffebc6;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 90%;
+    margin: 1em auto;
+}
+
+h1, h2, h3, p, ul { padding: .5em 0; }
+h1 { font-size: 150%; }
+h2 { font-size: 135%; }
+h3 { font-size: 120%; }
+li, p { font-size: 95%; }
+a, em { font-weight: bold; }
+a:link, a:visited { color: var(--dark); }
+a:hover, a:focus { color: var(--light); }
+ul { 
+	line-height: 1.5; 
+	margin-left: 2em;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 2px solid var(--light);
+    & img { 
+        float: left;
+        margin: .5em 2em .5em 0;
+    }
+    & h2 {
+        font-size: 225%;
+        color: var(--light);
+        padding: 0;
+    }
+    & h3 { 
+        font-style: italic; 
+        padding-bottom: 1em;
+    }
+}
+
+/* the styles for main */
+main {
+    display: flex;
+    padding-bottom: .5em;
+}
+
+/* the styles for the section */
+section {
+    flex-basis: 65%;
+}
+
+/* the styles for the sidebar */
+aside {
+    flex-basis: 35%;
+    background-color: var(--aside);
+	height: fit-content;
+	padding: 1em 1.5em;
+    margin: 1em 0 1em 1.5em;
+    border-radius: 25px;    
+    & h2 { padding: 0 }
+    & h3 { color: var(--dark); }
+}
+
+/* the styles for the footer */
+footer {
+    border-top: 2px solid var(--light);
+    padding-top: .5em;
+    & p {
+        font-size: 80%;
+        text-align: right;
+    }
+}

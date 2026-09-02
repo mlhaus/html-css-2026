@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Using the video element</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+		video {
+			width: 100%;
+		}
+    </style>
+</head>
+
+<body>
+
+	<h1>Welcome to the San Joaquin Valley Town Hall</h1>
+
+    <audio controls>
+        <source src="media/sjv_welcome.ogg">
+        <source src="media/sjv_welcome.mp3">
+    </audio>
+
+	<h1>A video featuring Dr. Scott Sampson</h1>
+
+	<video controls autoplay muted poster="images/poster.png">
+		<source src="media/sjv_speakers_sampson.webm">
+		<source src="media/sjv_speakers_sampson.ogv">
+		<source src="media/sjv_speakers_sampson.mp4">		
+	</video>
+</body>
+</html>

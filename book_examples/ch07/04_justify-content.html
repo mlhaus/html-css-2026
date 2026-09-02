@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align main axis</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* nav menu */
+        nav {
+            background-color: lightgray;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        #space-between {
+            justify-content: space-between;
+        }
+        #space-around {
+            justify-content: space-around;
+        }
+        #space-evenly {
+            justify-content: space-evenly;
+        }
+        #flex-end {
+            justify-content: flex-end;
+        }
+        li {
+            background-color: black;
+        }
+        a {
+            text-decoration: none;
+            color: white; 
+            display: block;
+            padding: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Space between</h1>
+    <nav>
+        <ul id="space-between">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
+    <h1>Space around</h1>
+    <nav>
+        <ul id="space-around">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
+    <h1>Space evenly</h1>
+    <nav>
+        <ul id="space-evenly">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
+    <h1>Flex end</h1>
+    <nav>
+        <ul id="flex-end">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+</body>
+</html>

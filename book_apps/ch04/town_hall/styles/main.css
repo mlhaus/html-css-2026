@@ -1,0 +1,55 @@
+/* variables for the colors */
+:root {
+	--light: #f2972e;
+	--dark: #931420;
+}
+
+/* default styles */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+h1 { font-size: 150%; }
+h2 { font-size: 135%; }
+h3 { font-size: 120%; }
+li, p { font-size: 95%; }
+ul { line-height: 1.5; }
+a, em { font-weight: bold; }
+a:link, a:visited { color: var(--dark);}
+a:hover, a:focus { color: var(--light); }
+
+/* the styles for the header */
+header {
+	text-align: center;
+	& img { 
+		float: left; 
+	}
+	& h2 {
+		font-size: 225%;
+		color: var(--light);
+	}
+	& h3 {
+		font-style: italic;
+		color: var(--dark);
+	}
+}
+
+/* the styles for the main content */
+main { 
+	clear: left; 
+	& p.indent { 
+		text-indent: 2em; 
+	}
+	& a.date_passed { 
+		color: gray; 
+	}
+}
+
+/* the styles for the footer */
+footer p.copyright {
+	font-size: 80%;
+	text-align: right;
+	&::before { 
+		content: "\00A9";   /* copyright symbol */
+	}  
+}
