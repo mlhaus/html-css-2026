@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Styles for all demo pages */
 * {
     /* This is a universal selector that applies to all elements */
@@ -7,8 +9,23 @@
 }
 body {
   /* background-color: purple; */
+  /* font-family: 'Times New Roman'; */
+  /* font-family: Arial; */
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: cursive; /* defaults to Comic Sans */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "PT Sans", sans-serif;
 }
 h1 {
-    font-size: 300%;
-    line-height: 1;
+    font-size: 3em; /* 48px, 300%, 3em are the same */ 
+    line-height: 1.1; /* only visible when text wraps on multiple lines */
+    /* color: navy; */
+    /* background-color: #c25858; */
+    /* border-color: fuchsia; */
+    /* border-width: 0.5em; */
+    /* border-style: solid; */
+    /* border: fuchsia 0.5em solid; */
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Merriweather", serif;
 }
