@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Define variables */
+:root {
+  --chili-pepper: rgb(222, 68, 17);
+}
 
 /* Styles for all demo pages */
 * {
@@ -43,10 +47,20 @@ h6 {
 /* This is a decendent selector - the a tag is a decendent (a child) of the main-menu */
 #main-menu a {
     text-decoration: none;
+    color: rgb(30, 18, 188);
 }
+/* :hover is called a pseudo-class-selector */
 #main-menu a:hover {
     text-decoration: underline;
 }
+/* Style the active list item in the main-menu */
+/* class attributes are identified with periods, id attributes are identified with hashtags */
+#main-menu li.active a {
+    font-weight: bold;
+    color: rgb(14, 169, 211); /* link color must be applied to the a tag */
+}
+
+
 #chapter4-demo img {
     float: right; /* repositions the image in relationship to the sibling paragraph */
     margin-left: 20px; /* Use left margin when floating right, use right margin when floating left */
@@ -59,10 +73,10 @@ h6 {
     /* font-weight: 700; */
     /* font-weight: bold; */
     /* font-weight: lighter; */
-
-    font-size: 20px;
+    /* Use !important to override competing styles */
+    font-size: 40px !important;
     /* 1.25 em refers to 16px * 1.25 */
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-size: 125%;
 
     /* space between lines of a paragraph */
@@ -70,15 +84,26 @@ h6 {
     line-height: 1.4em;
     line-height: 1.4;
     /* space at the start of a paragraph */
-    text-indent: 40px;
+    /* text-indent: 40px; */
     /* space between paragraphs */
     margin-bottom: 40px;
 
     text-align: justify; /* only use this if you are floating images inside a paragraph, like a newspaper or magazine. */
 }
+/* first-letter is a pseudo-element-selector */
+/* nth-child is a pseudo-class selector */
+#chapter4-demo p:nth-child(6)::first-letter {
+    color: var(--chili-pepper);
+    font-size: 60px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
 /* This style applies only to the second paragraph */
 #chapter4-demo p:nth-child(7) {
-    color: red;
+    color: var(--chili-pepper);
     /* Add a clear a property to a sibling element that has a float property set. */
     clear: right;
 }
@@ -92,7 +117,7 @@ h6 {
 /* selects a paragraph right after an h2 */
 #chapter4-demo h2 + p {
     font-weight: bold;
-    color: red;
+    color: var(--chili-pepper);
 }
 /* General sibling selector */
 /* Style all paragraphs following an h2 at the same sibling level */
