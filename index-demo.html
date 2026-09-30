@@ -3,98 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lynch Dallas Legal | Cedar Rapids, IA</title>
+        <title>Home | Lynch Dallas Legal | Cedar Rapids, IA</title>
         <link rel="icon" href="images/gavel-solid-full.svg" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        />
         <link rel="stylesheet" href="css/styles-demo.css" />
-        <style>
-            /* Styles for the demo home page */
-            body {
-                /* background-color: orange; */
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script defer src="scripts/main-demo.js"></script>
     </head>
-    <!-- <body style="background-color: yellow"> -->
     <body>
         <header>
-            <div id="logo">
-                <!-- Always link the site's logo to the homepage. -->
-                <a href="index-demo.html">
-                    <!-- This is an absolute URL -->
-                    <!-- <img src="https://www.lynchdallas.com/application/themes/lynchdallas/img/logo-stacked-blue.png" alt="Lynch Dallas Legal Logo" width="200"> -->
-                    <!-- This is a document relative URL -->
-                    <!-- DO NOT PUT A SLASH AT THE BEGINNING (root relative URL) or else it will not work on GitHub -->
-                    <!-- folder and file names are case sensitive on GitHub, but not locally -->
-                    <img
-                        src="images/logo-stacked-blue.png"
-                        alt="Lynch Dallas Legal Logo"
-                        width="200"
-                    />
-                </a>
+            <div id="header-grid">
+                <div id="header-logo">
+                    <a href="index-demo.html">
+                        <img
+                            src="images/logo-stacked-blue.png"
+                            alt="Lynch Dallas Legal Logo"
+                            width="200"
+                        />
+                    </a>
+                </div>
+                <!-- header-logo -->
+                <nav id="shortcut-links">
+                    <ul class="fa-ul">
+                        <li>
+                            <a href="#"
+                                ><span class="fa-li"
+                                    ><i
+                                        class="fa-regular fa-credit-card"
+                                    ></i></span
+                                >Pay Online</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span class="fa-li"
+                                    ><i
+                                        class="fa-solid fa-location-dot"
+                                    ></i></span
+                                >Directions</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><span class="fa-li"
+                                    ><i class="fa-solid fa-phone"></i></span
+                                >319-365-9101</a
+                            >
+                        </li>
+                    </ul>
+                </nav><!-- shortcut-links -->
+                <nav id="contact-mobile-nav">
+                    <a href="contact-demo.html" class="btn header-btn">Contact Us</a>
+                    <div id="mobile-nav">
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </div>
+                </nav><!-- contact-mobile-nav -->
+                <nav id="main-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="index-demo.html">Home</a>
+                        </li>
+                        <li><a href="#">Our Firm</a></li>
+                        <li><a href="#">Attorneys</a></li>
+                        <li><a href="#">Practice Areas</a></li>
+                        <li><a href="#">News &amp; Announcements</a></li>
+                    </ul>
+                </nav>
+                <!-- main-menu -->
             </div>
-            <nav id="main-menu">
-                <!-- Unordered lists are often used for navigation links -->
-                <ul>
-                    <!-- Create one list item per hyperlink -->
-                    <!-- The a tag is a child of li, li is a child of ul, ul is a child of nav -->
-                    <!-- The # symbol can be used to create links that don't go anywhere when clicked. -->
-                    <li class="active"><a href="index-demo.html">Home</a></li>
-                    <li><a href="#">Our Firm</a></li>
-                    <li><a href="attorneys.html">Attorneys</a></li>
-                    <li><a href="#">Practice Areas</a></li>
-                    <li><a href="#">News &amp; Announcements</a></li>
-                    <li><a href="#">IPIB Training</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- header-grid -->
         </header>
         <main>
-            <div id="chapter4-demo">
-                <h1>This Season's Town Hall speakers</h1>
-                <p>We have some fascinating speakers for you this season!</p>
-                <ul>
-                    <li>
-                        January:
-                        <a href="speakers/brancaccio.html"> David Brancaccio</a>
-                    </li>
-                    <li>
-                        February:
-                        <a href="speakers/fitzpatrick.html">
-                            Robert Fitzpatrick</a
-                        >
-                    </li>
-                </ul>
-                <section>
-                    <h2>Post-lecture luncheons</h2>
-                    <p>Extend the excitement by going to the luncheons.</p>
-                    <p>A limited number of tickets are available.</p>
-                    <p>Contact us by phone at (559) 555-1212.</p>
-                </section>
-                <img
-                    src="https://placekittens.com/200/200"
-                    alt="Cute white cat staring at the wall"
-                />
-                <!-- This is for a demo for page 103 -->
-                <p>
-                    <i>Lorem ipsum</i> dolor sit amet consectetur adipiscing
-                    elit. Quisque faucibus ex sapien vitae pellentesque sem
-                    placerat. In id cursus mi pretium tellus duis convallis.
-                    Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
-                    fringilla lacus nec metus bibendum egestas. Iaculis massa
-                    nisl malesuada lacinia integer nunc posuere. Ut hendrerit
-                    semper vel class aptent taciti sociosqu. Ad litora torquent
-                    per conubia nostra inceptos himenaeos.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    Quisque faucibus ex sapien vitae pellentesque sem placerat.
-                    In id cursus mi pretium tellus duis convallis. Tempus leo eu
-                    aenean sed diam urna tempor. Pulvinar vivamus fringilla
-                    lacus nec metus bibendum egestas. Iaculis massa nisl
-                    malesuada lacinia integer nunc posuere. Ut hendrerit semper
-                    vel class aptent taciti sociosqu. Ad litora torquent per
-                    conubia nostra inceptos himenaeos.
-                </p>
-            </div>
             <section id="hero">
                 <div id="hero-image">
                     <!-- Resize photos before using them -->
