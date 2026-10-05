@@ -23,7 +23,7 @@ h6 {
     font-family: 'Merriweather', serif;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
     header {
         border-top: 6px solid var(--color-brand);
     }
@@ -136,4 +136,4 @@ h6 {
     #main-menu li.active a {
         color: var(--color-accent);
     }
-}
+/* } */
