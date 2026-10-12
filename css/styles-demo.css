@@ -192,7 +192,7 @@ header {
     padding: 0;
 }
 
-#about-us h4 {
+#about-us h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.25em;
@@ -200,7 +200,7 @@ header {
     color: var(--color-brand);
 }
 
-#about-us h2 {
+#about-us h3 {
     font-size: 2em;
     text-align: center;
     font-weight: 400;
@@ -208,7 +208,7 @@ header {
 }
 
 /* Direct sibling */
-#about-us h2 + img {
+#about-us h3 + img {
     width: 100px;
     height: 5px;
     margin: 15px auto;
