@@ -16,8 +16,11 @@
         <link rel="stylesheet" href="css/styles-demo.css" />
         <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
         <script defer src="scripts/main-demo.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+        <script defer src="scripts/gsap.js"></script>
     </head>
-    <body>
+    <body translate="no">
         <header>
             <div id="header-grid">
                 <div id="header-logo">
@@ -106,10 +109,7 @@
                 <hr />
                 <h2>About Lynch Dallas Legal</h2>
                 <h3>We deliver. Thoughtful Strategy. Outstanding Results.</h3>
-                <img
-                    src="images/after.png"
-                    alt="Decorative underline"
-                />
+                <img src="images/after.png" alt="Decorative underline" />
                 <p>
                     Lynch Dallas: Navigating the legal horizons for your city,
                     your county, your business, your employees-OUR EXPERTISE.
@@ -182,15 +182,25 @@
                     </article>
                 </div>
             </div>
-            <section id="attorneys">
-                <div id="attorneys-image"></div>
-                <div id="attorneys-text">
-                    <h2>Our Attorneys</h2>
+            <div class="parallax">
+                <div class="parallax-bg"></div>
+                <div class="parallax-text">
+                    <h4>Our Attorneys</h4>
                     <h3>
                         Counsel and advice in practically every aspect of law
                     </h3>
+                    <p>
+                        Our lawyers possess the breadth of experience and depth
+                        of understanding to provide thoughtful solutions to our
+                        clients' most complex legal issues. We frequently
+                        collaborate across practice areas to identify innovative
+                        solutions to challenges facing our clients, and pride
+                        ourselves on having lawyers who are eager to work
+                        together to provide the capabilities our clients need.
+                    </p>
+                    <a href="#" class="btn">Meet Our Attorneys</a>
                 </div>
-            </section>
+            </div>
         </main>
         <footer>
             <section id="consultation">
@@ -217,8 +227,8 @@
             <!-- &copy is an HTML character entity that creates the copyright symbol -->
             <!-- The Fair Use doctorine allows us tcopy images and text for educational/non-commercial use -->
             <!-- target="_blank" can be added to hyperlinks to open them in a new tab. -->
-            <div id="copyright">
-                Copyright &copy;
+            <div id="footer-copyright">
+                <p>Copyright &copy;
                 <script>
                     document.write(new Date().getFullYear())
                 </script>
@@ -226,7 +236,7 @@
                 Application by
                 <a href="https://www.informaticsinc.com/" target="_blank"
                     >Informatics, Inc</a
-                >
+                ></p>
             </div>
         </footer>
     </body>

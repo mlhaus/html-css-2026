@@ -257,3 +257,76 @@ header {
     font-size: 1.1em;
     line-height: 1.25em;
 }
+
+.parallax {
+    /* The parent element must be 'position: relative' if it has a child that is 'position: absolute' */
+    position: relative;
+    height: 100vh;
+    display: flex; /* Must be added to the parent element */
+    align-items: center; /* vertically align center */
+    justify-content: center; /* horizontally align center */
+}
+
+.parallax-bg {
+    /* Positions the image in the upper-left corner of its parent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    background-image: url('../images/feature-full.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-text {
+    z-index: 1;
+    background-image: url('../images/bkg-pattern.jpg');
+    padding: 1.5em;
+    width: 80%;
+    border-top: 5px solid var(--color-accent);
+    color: white;
+    margin-top: 150px;
+}
+
+.parallax-text h3 {
+    color: var(--color-accent);
+    font-size: 2em;
+    line-height: 1.25em;
+}
+
+.parallax-text h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 0.8em 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+.parallax-text p {
+    margin: 1.25em 0;
+    line-height: 1.25em;
+}
+
+footer {
+    min-height: 50vh;
+}
+
+#footer-copyright {
+    background-color: #222;
+    color: #999;
+    padding: 24px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#footer-copyright a {
+    color: #999;
+    text-decoration: none;
+}
+
+#footer-copyright a:hover {
+    text-decoration: underline;
+}
