@@ -425,3 +425,29 @@ footer {
     background-color: var(--color-brand);
     transform: scale(1.2, 1.2);
 }
+
+/* Scroll-driven red ribbon */
+#scroll-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: visible;
+}
+#scroll-ribbon path {
+    fill: none;
+    stroke-linecap: round;
+}
+#scroll-ribbon .ribbon-body {
+    stroke: url(#ribbon-grad);
+    stroke-width: 22;
+    filter: url(#ribbon-shadow);
+    opacity: 0.92;
+}
+#scroll-ribbon .ribbon-shine {
+    stroke: rgba(255, 255, 255, 0.35);
+    stroke-width: 3;
+    transform: translateX(-4px);
+}
+
