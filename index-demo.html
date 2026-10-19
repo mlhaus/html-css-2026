@@ -14,6 +14,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         />
         <link rel="stylesheet" href="css/styles-demo.css" />
+
         <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
         <script defer src="scripts/main-demo.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
@@ -210,33 +211,88 @@
                 </div>
                 <div id="consultation-links"></div>
             </section>
-            <section id="contact">
-                <div id="contact-address">
-                    <h4>Lynch Dallas Legal</h4>
+            <section id="footer-contact">
+                <div id="contact-address" class="col">
+                    <h3>Lynch Dallas Legal</h3>
+                    <h4>Main Office</h4>
+                    <p>
+                        <a
+                            href="https://maps.app.goo.gl/2W6uZ2R5zrzgwYs26"
+                            target="_blank"
+                        >
+                            316 Second St SE Suite 124<br />Cedar Rapids, Iowa
+                            52401</a
+                        >
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.086006372822!2d-91.6688776239719!3d41.976963159218705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e4f7455532e47f%3A0x2a6fc6d12a736c23!2s316%202nd%20St%20SE%2C%20Cedar%20Rapids%2C%20IA%2052401!5e0!3m2!1sen!2sus!4v1792421421124!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+                    </p>
+
+                    <h4>Satellite Office</h4>
+                    <p>
+                        <a
+                            href="https://maps.app.goo.gl/ZtYZXhyhDft1Jyet6"
+                            target="_blank"
+                        >
+                            709 John Drive<br />Monticello, Iowa 52310</a
+                        >
+                    </p>
                 </div>
-                <div id="contact-phone-email">
-                    <h4>Contact Us</h4>
+                <div id="contact-phone-email" class="col">
+                    <h3>Contact Us</h3>
+                    <table>
+                        <tr>
+                            <th>Phone</th>
+                            <td><a href="tel:3193659101">319-365-9101</a></td>
+                        </tr>
+                        <tr>
+                            <th>Fax</th>
+                            <td>319-365-9512</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>
+                                <a
+                                    href="mailto:info@lynchdallas.com?subject=Website Contact"
+                                    >info@lynchdallas.com</a
+                                >
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="contact-social-media">
-                    <h4>Connect With Us</h4>
+                <div id="contact-social-media" class="col">
+                    <h3>Connect With Us</h3>
+                    <p>
+                        Follow us and connect via social media for updates and
+                        more.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.x.com" target="_blank"
+                            ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                        <a href="https://www.linkedin.com" target="_blank"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                    </div>
                 </div>
-                <div id="contact-about-us">
-                    <h4>About Us</h4>
+                <div id="contact-about-us" class="col">
+                    <h3>About Us</h3>
+                    <p>Lynch Dallas Legal offers clients a wealth of experience and partners with you to address your most urgent priorities. We represent clients across the state of Iowa.</p>
                 </div>
             </section>
             <!-- &copy is an HTML character entity that creates the copyright symbol -->
             <!-- The Fair Use doctorine allows us tcopy images and text for educational/non-commercial use -->
             <!-- target="_blank" can be added to hyperlinks to open them in a new tab. -->
             <div id="footer-copyright">
-                <p>Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>
-                Lynch Dallas, P.C. Attorneys At Law. All Rights Reserved. Web
-                Application by
-                <a href="https://www.informaticsinc.com/" target="_blank"
-                    >Informatics, Inc</a
-                ></p>
+                <p>
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    Lynch Dallas, P.C. Attorneys At Law. All Rights Reserved.
+                    Web Application by
+                    <a href="https://www.informaticsinc.com/" target="_blank"
+                        >Informatics, Inc</a
+                    >
+                </p>
             </div>
         </footer>
     </body>
