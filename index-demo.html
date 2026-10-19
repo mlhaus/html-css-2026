@@ -20,7 +20,7 @@
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
         <script defer src="scripts/gsap.js"></script>
-        <script defer src="scripts/ribbon.js"></script>
+        <!-- <script defer src="scripts/ribbon.js"></script> -->
     </head>
     <body translate="no">
         <header>
@@ -205,13 +205,19 @@
             </div>
         </main>
         <footer>
-            <section id="consultation">
-                <div id="consulation-text">
-                    <h2>Let's Get Started</h2>
-                    <h3>Schedule a Consultation</h3>
-                </div>
-                <div id="consultation-links"></div>
-            </section>
+            <div id="footer-cta">
+                <img
+                    src="images/footer-background.jpg"
+                    alt="The exterior of the Lynch Dallas buidling with a brick facade"
+                />
+                <h4>Let's Get Started</h4>
+                <h2>Schedule a Consultation</h2>
+                <a href="tel:3193659101"
+                    ><span><i class="fa-solid fa-phone"></i></span
+                    >319-365-9101</a
+                >
+                <span>or</span> <a href="#" class="btn">Contact Us Today</a>
+            </div>
             <section id="footer-contact">
                 <div id="contact-address" class="col">
                     <h3>Lynch Dallas Legal</h3>
@@ -276,7 +282,12 @@
                 </div>
                 <div id="contact-about-us" class="col">
                     <h3>About Us</h3>
-                    <p>Lynch Dallas Legal offers clients a wealth of experience and partners with you to address your most urgent priorities. We represent clients across the state of Iowa.</p>
+                    <p>
+                        Lynch Dallas Legal offers clients a wealth of experience
+                        and partners with you to address your most urgent
+                        priorities. We represent clients across the state of
+                        Iowa.
+                    </p>
                 </div>
             </section>
             <!-- &copy is an HTML character entity that creates the copyright symbol -->
