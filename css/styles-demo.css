@@ -500,7 +500,7 @@ white;
   display: none;
 }
 
-#footer-cta a:hover {
+#footer-cta a:first-of-type:hover {
   text-decoration: underline;
 }
 
