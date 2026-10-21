@@ -83,6 +83,13 @@ header {
     }
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 2;
+}
+
 #contact-mobile-nav {
     display: flex;
     min-height: 62px;
