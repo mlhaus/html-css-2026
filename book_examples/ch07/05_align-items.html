@@ -13,16 +13,24 @@
         }
         ul {
             display: flex;
-            align-items: center;
+            flex-direction: row;
+            /* in order to see how the align-items
+            property works, you must set a height
+            to the flex container */
+            align-items: stretch; /* default value, makes child elements the same height as the parent element */
+            align-items: flex-start; /* makes child elements align to top */
+            align-items: flex-end; /* makes child elements align to bottom */
+            align-items: center; /* makes child elements align to center */
             list-style-type: none;
             min-height: 4em;
         }
         li {
             background-color: black;
+            /* height: 40px; */
         }
-        li:hover {
+        /* li:hover {
             align-self: stretch;
-        }
+        } */
         a {
             display: block;
             padding: .5em 1em;

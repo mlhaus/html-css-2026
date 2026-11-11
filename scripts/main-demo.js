@@ -63,3 +63,23 @@ if (mobileNav && mainMenu) {
 	});
 	
 })(jQuery); 
+
+// This code changes the favicon based on light- and dark-mode settings
+const favicon = document.getElementById('favicon');
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+function updateFavicon(e) {
+    if (e.matches) {
+        // console.log("Dark mode");
+        favicon.href = 'images/gavel-solid-light.svg';
+    } else {
+        // console.log("Light mode");
+        favicon.href = 'images/gavel-solid.svg';
+    }
+}
+
+// Initial check
+updateFavicon(darkModeMediaQuery);
+
+// Listen for changes in color scheme preference
+darkModeMediaQuery.addEventListener('change', updateFavicon);

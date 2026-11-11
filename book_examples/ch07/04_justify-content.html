@@ -14,6 +14,14 @@
             display: flex;
             list-style-type: none;
         }
+        #flex-start {
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        #flex-center {
+            justify-content: center;
+            gap: 10px;
+        }
         #space-between {
             justify-content: space-between;
         }
@@ -25,6 +33,7 @@
         }
         #flex-end {
             justify-content: flex-end;
+            gap: 10px;
         }
         li {
             background-color: black;
@@ -39,6 +48,39 @@
 </head>
 
 <body>
+    <h1>Flex Start</h1>
+    <nav>
+        <ul id="flex-start">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
+    <h1>Center</h1>
+    <nav>
+        <ul id="flex-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
+    <h1>Flex end</h1>
+    <nav>
+        <ul id="flex-end">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">About Us</a></li> 
+        </ul>
+    </nav>
+
     <h1>Space between</h1>
     <nav>
         <ul id="space-between">
@@ -72,15 +114,6 @@
         </ul>
     </nav>
 
-    <h1>Flex end</h1>
-    <nav>
-        <ul id="flex-end">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Speakers</a></li>
-            <li><a href="#">Get Tickets</a></li>
-            <li><a href="#">Become a Member</a></li>
-            <li><a href="#">About Us</a></li> 
-        </ul>
-    </nav>
+    
 </body>
 </html>

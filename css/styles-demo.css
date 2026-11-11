@@ -10,6 +10,7 @@
 }
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 body {
     font-family: 'PT Sans', sans-serif;
@@ -143,6 +144,11 @@ html {
 header {
     border-top: 6px solid var(--color-brand);
 }
+@media only screen and (prefers-color-scheme: dark) {
+    #header-grid {
+        background-color: #222;
+    }
+}
 #header-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -154,7 +160,7 @@ header {
 }
 #header-logo img {
     display: block;
-    width: 290px;
+    width: 590px;
     max-width: 80vw;
     height: auto;
 }
@@ -174,9 +180,15 @@ header {
     font-size: 18px;
     font-weight: 700;
 }
+
 #shortcut-links a {
     color: var(--color-brand);
     text-decoration: none;
+}
+@media only screen and (prefers-color-scheme: dark) {
+    #shortcut-links a  {
+        color: white !important;
+    }
 }
 #shortcut-links .fa-li {
     position: static;
@@ -225,6 +237,7 @@ header {
 }
 #mobile-nav {
     display: flex;
+    flex-direction: row;
     min-width: 98px;
     align-items: center;
     justify-content: center;

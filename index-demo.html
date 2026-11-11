@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home | Lynch Dallas Legal | Cedar Rapids, IA</title>
-        <link rel="icon" href="images/gavel-solid-full.svg" />
+        <link rel="icon" id="favicon" href="images/gavel-solid.svg">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -41,11 +41,22 @@
             <div id="header-grid">
                 <div id="header-logo">
                     <a href="index-demo.html">
-                        <img
+                        <!-- <img
                             src="images/logo-stacked-blue.png"
                             alt="Lynch Dallas Legal Logo"
                             width="200"
-                        />
+                        /> -->
+                        <picture>
+                            <source
+                                srcset="images/logo-white.png"
+                                media="(prefers-color-scheme: dark)"
+                            />
+                            <img
+                                src="images/logo.png"
+                                alt="Dallas-Lynch Logo"
+                                width="200"
+                            />
+                        </picture>
                     </a>
                 </div>
                 <!-- header-logo -->
