@@ -33,77 +33,83 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg>
         </div>
-        <header>
-            <a href="#about-us" class="skip-to-main-content-link"
-                >Skip to main content</a
-            >
-
-            <div id="header-grid">
-                <div id="header-logo">
-                    <a href="index-demo.html">
-                        <!-- <img
-                            src="images/logo-stacked-blue.png"
-                            alt="Lynch Dallas Legal Logo"
-                            width="200"
-                        /> -->
-                        <picture>
-                            <source
-                                srcset="images/logo-white.png"
-                                media="(prefers-color-scheme: dark)"
-                            />
-                            <img
-                                src="images/logo.png"
-                                alt="Dallas-Lynch Logo"
-                                width="200"
-                            />
-                        </picture>
-                    </a>
-                </div>
-                <!-- header-logo -->
-                <nav id="shortcut-links">
-                    <ul class="fa-ul">
-                        <li>
-                            <a href="#"
-                                ><span class="fa-li"
-                                    ><i
-                                        class="fa-regular fa-credit-card"
-                                    ></i></span
-                                >Pay Online</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><span class="fa-li"
-                                    ><i
-                                        class="fa-solid fa-location-dot"
-                                    ></i></span
-                                >Directions</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><span class="fa-li"
-                                    ><i class="fa-solid fa-phone"></i></span
-                                >319-365-9101</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-                <!-- shortcut-links -->
-            </div>
-            <!-- header-grid -->
-        </header>
-        <div class="sticky">
-            <nav id="contact-mobile-nav">
-                <a href="contact-demo.html" class="btn header-btn"
-                    >Contact Us</a
+        <div id="header-grid-parent">
+            <header>
+                <a href="#about-us" class="skip-to-main-content-link"
+                    >Skip to main content</a
                 >
-                <div id="mobile-nav">
-                    <i class="fa-solid fa-bars fa-2xl"></i>
+
+                <div id="header-grid">
+                    <div id="header-logo">
+                        <a href="index-demo.html">
+                            <!-- <img
+                                src="images/logo-stacked-blue.png"
+                                alt="Lynch Dallas Legal Logo"
+                                width="200"
+                            /> -->
+                            <picture>
+                                <source
+                                    srcset="images/logo-white.png"
+                                    media="(prefers-color-scheme: dark)"
+                                />
+                                <img
+                                    src="images/logo.png"
+                                    alt="Dallas-Lynch Logo"
+                                    width="200"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+                    <!-- header-logo -->
+                    
                 </div>
-            </nav>
-            <!-- contact-mobile-nav -->
-            <nav id="main-menu" class="is-closed">
+                <!-- header-grid -->
+            </header>
+            <div id="shortcut-links-contact">
+                <nav id="shortcut-links">
+                            <ul class="fa-ul">
+                                <li>
+                                    <a href="#"
+                                        ><span class="fa-li"
+                                            ><i
+                                                class="fa-regular fa-credit-card"
+                                            ></i></span
+                                        >Pay Online</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><span class="fa-li"
+                                            ><i
+                                                class="fa-solid fa-location-dot"
+                                            ></i></span
+                                        >Directions</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><span class="fa-li"
+                                            ><i class="fa-solid fa-phone"></i></span
+                                        >319-365-9101</a
+                                    >
+                                </li>
+                            </ul>
+                </nav>
+                <div class="sticky">
+                    <nav id="contact-mobile-nav">
+                        <a href="contact-demo.html" class="btn header-btn"
+                            >Contact Us</a
+                        >
+                        <div id="mobile-nav">
+                            <i class="fa-solid fa-bars fa-2xl"></i>
+                        </div>
+                    </nav>
+                    <!-- contact-mobile-nav -->
+                </div>
+            </div>
+            <!-- shortcut-links -->
+
+            <nav id="main-menu" class="is-closed sticky">
                 <ul>
                     <li class="active">
                         <a href="index-demo.html">Home</a>
@@ -115,6 +121,7 @@
                 </ul>
             </nav>
             <!-- main-menu -->
+
         </div>
         <main>
             <div id="jumbotron">

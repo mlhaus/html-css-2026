@@ -8,6 +8,7 @@
     <style>
         div { 
             background: #C8DFEE; 
+            padding: 10px;
         }
 		section {
 			display: grid;
@@ -16,23 +17,23 @@
 		}
 		/* repeat() with integers and fractional widths */
         #grid1 {
-            grid-template: repeat(2, 50px) / repeat(3, 1fr);
+            grid-template: repeat(2, 100px) / repeat(3, 1fr);
         }
 		/* mixed units */
 		#grid2 {
-			grid-template: repeat(2, 50px) / 100px 30% 1fr;
+			grid-template: repeat(2, 100px) / 1fr 30% 100px;
 		}
         /* repeat two columns */
         #grid3 {
-            grid-template: repeat(2, 50px) / repeat(2, 50px 1fr);
+            grid-template: repeat(2, 100px) / repeat(2, 50px 1fr);
         }
         /* auto-fit and minmax() with repeat() */
         #grid4 {
-            grid-template: repeat(2, 50px) / repeat(auto-fit, minmax(75px, 1fr));
+            grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(100px, 1fr));
         }        
         /* auto-fill and minmax() with repeat() */
         #grid5 {
-            grid-template: repeat(2, 50px) / repeat(auto-fill, minmax(75px, 1fr));
+            grid-template: repeat(2, 100px) / repeat(auto-fill, minmax(75px, 1fr));
         }
 
     </style>
