@@ -538,6 +538,23 @@ header {
 
 #about-cards {
     padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 700px) {
+    #about-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #about-cards article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #about-cards article {
+        width: 33.3%;
+    }
 }
 
 #about-cards article {
