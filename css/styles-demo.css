@@ -169,14 +169,15 @@ html {
 header {
     border-top: 6px solid var(--color-brand);
 }
-@media only screen and (prefers-color-scheme: dark) {
-    #header-grid,#shortcut-links-contact {
-        background-color: #222;
-    }
-}
+
 #header-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+}
+@media only screen and (prefers-color-scheme: dark) {
+    #header-grid,#shortcut-links {
+        background-color: #222;
+    }
 }
 
 #header-logo {
@@ -362,6 +363,11 @@ header {
         display: block;
     }
 }
+@media only screen and (prefers-color-scheme: dark) and (min-width: 850px) {
+    #main-menu {
+        background-color: #222;
+    }
+}
 #main-menu ul {
     margin: 0 20px;
     list-style: none;
@@ -408,6 +414,12 @@ header {
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
+}
+@media only screen and (prefers-color-scheme: dark) and (min-width: 850px) {
+    #main-menu li a {
+        border-bottom-color: #222;
+        color: white;
+    }
 }
 #main-menu li.active a {
     color: var(--color-accent);
