@@ -145,7 +145,7 @@ html {
     /* position: relative; */
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #header-grid-parent {
         display: grid;
         grid-template-rows: 170px;
@@ -189,12 +189,12 @@ header {
     max-width: 80vw;
     height: auto;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #header-logo img {
         width: 200px;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #shortcut-links-contact {
         display: flex;
         align-items: center;
@@ -223,7 +223,7 @@ header {
 #shortcut-links {
     padding: 0 12px 20px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #shortcut-links {
         padding: 0;
         display: flex;
@@ -287,7 +287,7 @@ header {
     top: 60px;
     z-index: 2;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     .sticky2 {
         top: 0;
     }
@@ -300,7 +300,7 @@ header {
     justify-content: space-between;
     background: var(--color-brand);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #contact-mobile-nav {
         display: inline-block;
         background: none;
@@ -316,7 +316,7 @@ header {
     font-weight: 700;
     text-decoration: none;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #contact-mobile-nav .header-btn {
         padding: 20px 32px;
     }
@@ -334,7 +334,7 @@ header {
     font-size: 18px;
     font-weight: 700;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #mobile-nav {
         display: none;
     }
@@ -351,7 +351,7 @@ header {
     box-shadow: 0 5px 10px var(--color-shadow);
     align-self: start;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #main-menu {
         height: 76px;
     }
@@ -359,7 +359,7 @@ header {
 #main-menu.is-closed {
     display: none;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #main-menu.is-closed {
         display: block;
     }
@@ -368,7 +368,7 @@ header {
     margin: 0 20px;
     list-style: none;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #main-menu ul {
         display: flex;
         justify-content: center;
@@ -384,7 +384,7 @@ header {
     min-height: 76px;
     border-bottom: 1px dotted var(--color-border);
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     #main-menu li {
         border-bottom: none
     }
