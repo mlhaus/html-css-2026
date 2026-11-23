@@ -658,6 +658,27 @@ footer {
 #footer-contact {
     padding: 40px 0;
 }
+@media only screen and (min-width: 600px) {
+    #footer-contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #footer-contact .col {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #footer-contact .col {
+        width: 33.3%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #footer-contact .col {
+        width: 25%;
+    }
+}
 
 #footer-contact .col {
     padding: 10px 20px;
